@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QjJ-1j-Kct">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Navgation Controller-->
+        <scene sceneID="Mmv-cE-jrh">
+            <objects>
+                <navigationController hidesBottomBarWhenPushed="YES" id="q16-ew-fYz" customClass="MainNavgationController" customModule="FM_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tabbar_find_n" id="Fzj-ez-wGM" customClass="RAMAnimatedTabBarItem" customModule="FM_Swift" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="eZo-cG-GSM" id="SvR-KD-K7E"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ADd-1y-RWv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wJE-Q4-t8C" kind="relationship" relationship="rootViewController" id="QhP-Ji-YKi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CH9-Hg-9qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="eZo-cG-GSM" customClass="RAMBounceAnimation" customModule="FM_Swift" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="638" y="-258"/>
+        </scene>
+        <!--Find View Controller-->
+        <scene sceneID="Y99-CA-jqU">
+            <objects>
+                <viewController id="wJE-Q4-t8C" customClass="FindViewController" customModule="FM_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n1y-U7-ZG1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccN-XV-rhh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PmG-Vl-9D1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2nh-qH-WvT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zW4-Q6-RN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="-239"/>
+        </scene>
+        <!--Main Navgation Controller-->
+        <scene sceneID="Q8V-Oy-Hwj">
+            <objects>
+                <navigationController hidesBottomBarWhenPushed="YES" id="0qQ-s1-Far" customClass="MainNavgationController" customModule="FM_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tabbar_sound_n" selectedImage="tabbar_sound_h" id="AFJ-1h-sGw" customClass="RAMAnimatedTabBarItem" customModule="FM_Swift" customModuleProvider="target">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <connections>
+                            <outlet property="animation" destination="T4O-6j-MjN" id="HmE-vS-BCb"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JWZ-mc-u4N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uaa-bA-zNF" kind="relationship" relationship="rootViewController" id="Zpo-Se-A02"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hr4-rr-0gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="T4O-6j-MjN" customClass="RAMBounceAnimation" customModule="FM_Swift" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1375" y="492"/>
+        </scene>
+        <!--Sub Scribe View Controller-->
+        <scene sceneID="XqL-34-MDw">
+            <objects>
+                <viewController id="uaa-bA-zNF" customClass="SubScribeViewController" customModule="FM_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hcj-CC-Ohd"/>
+                        <viewControllerLayoutGuide type="bottom" id="23e-Oa-8v9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TBZ-r4-5ee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xm9-Ai-3OH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I92-kC-9zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="496"/>
+        </scene>
+        <!--Mine View Controller-->
+        <scene sceneID="quI-1J-que">
+            <objects>
+                <viewController id="DFF-lT-Wr8" customClass="MineViewController" customModule="FM_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bPS-fl-hCE"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbL-QY-0OH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DX2-Ge-a2o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RotationAnimation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juj-np-Jde">
+                                <rect key="frame" x="13.5" y="183.5" width="348" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="5mf-z4-7zw"/>
+                                    <constraint firstAttribute="height" constant="71" id="AvE-La-OSt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="juj-np-Jde" secondAttribute="centerY" constant="114.5" id="5B9-09-yru"/>
+                            <constraint firstAttribute="centerX" secondItem="juj-np-Jde" secondAttribute="centerX" id="JZ0-P4-3th"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabbar_download_n" selectedImage="tabbar_download_h" id="z5N-yh-KHH" customClass="RAMAnimatedTabBarItem" customModule="FM_Swift" customModuleProvider="target">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="SMy-mk-LC7" id="OAd-DC-Pt3"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Cn-qd-9Vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="SMy-mk-LC7" customClass="RAMBounceAnimation" customModule="FM_Swift" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1349" y="1228"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="ovl-w5-59e">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QjJ-1j-Kct" customClass="RAMAnimatedTabBarController" customModule="FM_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Xsb-sw-RJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="q16-ew-fYz" kind="relationship" relationship="viewControllers" id="r1E-zF-8KF"/>
+                        <segue destination="DFF-lT-Wr8" kind="relationship" relationship="viewControllers" id="ege-ES-0le"/>
+                        <segue destination="0qQ-s1-Far" kind="relationship" relationship="viewControllers" id="Ocd-Uz-MtT"/>
+                        <segue destination="Zsy-o9-m6D" kind="relationship" relationship="viewControllers" id="rtT-KT-B5t"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEF-4x-wpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="479"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rxZ-sE-b31">
+            <objects>
+                <viewController id="Zsy-o9-m6D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lxI-Ta-Ipa"/>
+                        <viewControllerLayoutGuide type="bottom" id="YWx-Sv-OdQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qT7-Vb-aMC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FrameItemAnimation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-CR-KSE">
+                                <rect key="frame" x="13.5" y="183.5" width="348" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="CpS-Yg-h9q"/>
+                                    <constraint firstAttribute="height" constant="71" id="cij-cm-UE5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gnW-CR-KSE" secondAttribute="centerX" id="jwX-bj-6Ah"/>
+                            <constraint firstAttribute="centerY" secondItem="gnW-CR-KSE" secondAttribute="centerY" constant="114.5" id="pMh-vB-55X"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabbar_me_n" selectedImage="tabbar_me_h" id="c38-iL-qNf" customClass="RAMAnimatedTabBarItem" customModule="FM_Swift" customModuleProvider="target">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="Ojd-WY-9Yd" id="Ogs-bO-YG5"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuQ-Du-YS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Ojd-WY-9Yd" customClass="RAMBounceAnimation" customModule="FM_Swift" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.91764705879999997" green="0.2901960784" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="537" y="1228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_download_h" width="30" height="49"/>
+        <image name="tabbar_download_n" width="30" height="49"/>
+        <image name="tabbar_find_n" width="31" height="49"/>
+        <image name="tabbar_me_h" width="30" height="49"/>
+        <image name="tabbar_me_n" width="30" height="49"/>
+        <image name="tabbar_sound_h" width="30" height="49"/>
+        <image name="tabbar_sound_n" width="30" height="49"/>
+    </resources>
+</document>
