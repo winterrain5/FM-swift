@@ -13,6 +13,9 @@ pod 'HandyJSON', '~> 1.2.1'
 pod 'SwiftyJSON'
 pod 'DZNEmptyDataSet'
 pod 'MJExtension'
+pod 'Kingfisher', '~> 3.0'
+
+
   target 'FM-SwiftTests' do
     inherit! :search_paths
     # Pods for testing

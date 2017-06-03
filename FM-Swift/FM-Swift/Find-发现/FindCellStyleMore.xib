@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindCellStyleMore" id="BQN-mY-M7E" customClass="FindCellStyleMore" customModule="FM_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BQN-mY-M7E" id="mrS-s4-7gc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXA-wd-Ema">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="nec-E7-7J0">
+                                <rect key="frame" x="295" y="17" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="pLw-r7-xcx"/>
+                                    <constraint firstAttribute="height" constant="15" id="woW-Va-2Qk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find_gotocate" translatesAutoresizingMaskIntoConstraints="NO" id="HSe-7l-rSs">
+                                <rect key="frame" x="10" y="14.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bqw-0O-Iqv"/>
+                                    <constraint firstAttribute="height" constant="20" id="wxb-CL-cXi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多分类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-3P-QzQ">
+                                <rect key="frame" x="50" y="17" width="144" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="SNW-q5-ELQ"/>
+                                    <constraint firstAttribute="height" constant="15" id="qvQ-Mf-3Ps"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HSe-7l-rSs" firstAttribute="leading" secondItem="HXA-wd-Ema" secondAttribute="leading" constant="10" id="6oy-Pg-EkZ"/>
+                            <constraint firstItem="HSe-7l-rSs" firstAttribute="centerY" secondItem="HXA-wd-Ema" secondAttribute="centerY" id="TDb-pZ-tEt"/>
+                            <constraint firstAttribute="trailing" secondItem="nec-E7-7J0" secondAttribute="trailing" constant="10" id="W4o-Qj-mhS"/>
+                            <constraint firstItem="8Fe-3P-QzQ" firstAttribute="leading" secondItem="HSe-7l-rSs" secondAttribute="trailing" constant="20" id="d8T-r7-d7G"/>
+                            <constraint firstItem="8Fe-3P-QzQ" firstAttribute="centerY" secondItem="HXA-wd-Ema" secondAttribute="centerY" id="rcI-hF-WDq"/>
+                            <constraint firstItem="nec-E7-7J0" firstAttribute="centerY" secondItem="HXA-wd-Ema" secondAttribute="centerY" id="u9E-H7-aNf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HXA-wd-Ema" secondAttribute="trailing" id="AOs-1w-4sk"/>
+                    <constraint firstItem="HXA-wd-Ema" firstAttribute="leading" secondItem="mrS-s4-7gc" secondAttribute="leading" id="SYK-SX-aQx"/>
+                    <constraint firstItem="HXA-wd-Ema" firstAttribute="top" secondItem="mrS-s4-7gc" secondAttribute="top" id="g7F-w6-at9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HXA-wd-Ema" secondAttribute="bottom" constant="1.5" id="lKf-ps-9d9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="32" y="58.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cell_arrow" width="15" height="15"/>
+        <image name="find_gotocate" width="20" height="20"/>
+    </resources>
+</document>

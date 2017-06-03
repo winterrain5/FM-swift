@@ -7,6 +7,8 @@
 //
 
 import UIKit
+// MARK:- 全局变量 - 当前navigationController
+var findNaviController: UINavigationController?
 
 class FindViewController: BaseViewController {
     
@@ -20,14 +22,11 @@ class FindViewController: BaseViewController {
     lazy var subTitleView: FindSubTitleView = { [unowned self] in
         let subTitleV = FindSubTitleView()
         subTitleV.frame = CGRect.init(x: 0, y: 0, width: kScreenW, height: 40)
-       
         self.view.addSubview(subTitleV)
         return subTitleV
     }()
     
-    
-    
-    // 所有自控制器
+    // 所有子控制器
     lazy var controllers: [BaseViewController] = { [unowned self] in
         var cons: [BaseViewController] = [BaseViewController]()
         for title in self.subTitleArr {
@@ -47,7 +46,7 @@ class FindViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        findNaviController = navigationController
         view.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.93, alpha: 1.0)
         
         subTitleView.delegate = self
@@ -58,6 +57,8 @@ class FindViewController: BaseViewController {
             make.left.right.equalTo(view)
             make.bottom.equalTo(view.snp.bottom).offset(-49)
         }
+        
+        navigationItem.title = "发现"
         
     }
   

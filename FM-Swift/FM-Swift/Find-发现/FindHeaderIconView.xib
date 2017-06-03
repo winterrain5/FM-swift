@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VLO-Up-OON" customClass="FindHeaderIconView" customModule="FM_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="71" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JcC-ns-rCS">
+                    <rect key="frame" x="14" y="16" width="43" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="IF8-KG-mU4"/>
+                        <constraint firstAttribute="width" secondItem="JcC-ns-rCS" secondAttribute="height" id="fhv-d4-oLC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经典必听" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbJ-l8-wrY">
+                    <rect key="frame" x="0.0" y="69" width="71" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="y1g-ff-hsF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nbJ-l8-wrY" secondAttribute="trailing" id="CUT-NV-ozl"/>
+                <constraint firstItem="JcC-ns-rCS" firstAttribute="top" secondItem="VLO-Up-OON" secondAttribute="top" constant="16" id="cDb-KK-IyA"/>
+                <constraint firstItem="nbJ-l8-wrY" firstAttribute="top" secondItem="JcC-ns-rCS" secondAttribute="bottom" constant="10" id="gz3-wM-VBv"/>
+                <constraint firstItem="nbJ-l8-wrY" firstAttribute="leading" secondItem="VLO-Up-OON" secondAttribute="leading" id="lbP-Xv-1WW"/>
+                <constraint firstItem="JcC-ns-rCS" firstAttribute="centerX" secondItem="VLO-Up-OON" secondAttribute="centerX" id="zNI-sN-cL8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImgView" destination="JcC-ns-rCS" id="KU6-ag-Nma"/>
+                <outlet property="titleL" destination="nbJ-l8-wrY" id="jWa-gU-3ew"/>
+            </connections>
+            <point key="canvasLocation" x="-282.5" y="9"/>
+        </view>
+    </objects>
+</document>

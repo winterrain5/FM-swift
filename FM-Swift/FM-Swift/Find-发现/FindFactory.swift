@@ -14,6 +14,12 @@ enum SubFindType {
     case SubFindTypeRadio        // 广播
     case SubFindTypeRand         // 榜单
     case SubFindTypeAnchor       // 主播
+    case SubDownloadAlbum        // 专辑
+    case SubDownloadVoice        // 声音
+    case SubDownloadDownloading  // 下载中
+    case SubScribeRecommend      // 推荐
+    case SubScribeHistory        // 历史
+    case SubScribeDetail         // 订阅
     case SubFindTypeUnkown       // 未知
 }
 
@@ -33,6 +39,18 @@ class FindFactory: NSObject {
             controller = FindRandViewController()
         case .SubFindTypeAnchor:
             controller = FindAnchorViewController()
+        case .SubDownloadAlbum:
+            controller = DownAlbumViewController()
+        case .SubDownloadVoice:
+            controller = DownVoiceViewController()
+        case .SubDownloadDownloading:
+            controller = DownLoadingViewController()
+        case .SubScribeDetail:
+            controller = AlbumDetailViewController()
+        case .SubScribeHistory:
+            controller = AudioHistoryViewController()
+        case .SubScribeRecommend:
+            controller = SubcribeRecViewController()
         default:
             controller = BaseViewController()
         }
@@ -52,7 +70,19 @@ class FindFactory: NSObject {
             return .SubFindTypeRand
         } else if title == "主播" {
             return .SubFindTypeAnchor
-        } else {
+        }else if title == "专辑" {
+            return .SubDownloadAlbum
+        }else if title == "声音" {
+            return .SubDownloadVoice
+        }else if title == "下载中" {
+            return .SubDownloadDownloading
+        } else if title == "推荐" {
+            return .SubScribeDetail
+        }else if title == "订阅" {
+            return .SubScribeRecommend
+        }else if title == "历史" {
+            return .SubScribeHistory
+        }else {
             return .SubFindTypeUnkown
         }
     }
